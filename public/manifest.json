@@ -1,15 +1,37 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "theme_color": "#CB0D0D",
+  "background_color": "#CB0D0D",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/corona-praevention/#/?title",
+  "name": "Corona-Pr\u00e4ventionskarte Wuppertal",
+  "short_name": "Corona Wuppertal",
+  "description": "Topicmap f\u00fcr Corona-Pr\u00e4vention in Wuppertal",
   "icons": [
     {
       "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
+    },
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  ]
 }
