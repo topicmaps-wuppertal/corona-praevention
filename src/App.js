@@ -105,6 +105,8 @@ function App() {
       }}
     >
       <TopicMapComponent
+        homeCenter={[51.2425605868143, 7.185153968951078]}
+        homeZoom={8}
         locatorControl={true}
         gazData={gazData}
         infoBox={
