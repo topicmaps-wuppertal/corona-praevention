@@ -12,6 +12,9 @@ import { getGazDataForTopicIds } from "react-cismap/tools/gazetteerHelper";
 import TopicMapContextProvider from "react-cismap/contexts/TopicMapContextProvider";
 import { getClusterIconCreatorFunction } from "react-cismap/tools/uiHelper";
 import TopicMapComponent from "react-cismap/topicmaps/TopicMapComponent";
+import DefaultAppMenu from "react-cismap/topicmaps/menu/DefaultAppMenu";
+import Section from "react-cismap/topicmaps/menu/Section";
+import MyMenu from "./Menu";
 import FeatureCollection from "react-cismap/FeatureCollection";
 import GenericInfoBoxFromFeature from "react-cismap/topicmaps/GenericInfoBoxFromFeature";
 import getGTMFeatureStyler from "react-cismap/topicmaps/generic/GTMStyler";
@@ -106,6 +109,7 @@ function App() {
       }}
     >
       <TopicMapComponent
+        modalMenu={<MyMenu />}
         homeCenter={[51.2425605868143, 7.185153968951078]}
         homeZoom={8}
         locatorControl={true}
