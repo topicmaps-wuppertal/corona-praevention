@@ -4,8 +4,6 @@ import DefaultAppMenu from "react-cismap/topicmaps/menu/DefaultAppMenu";
 import Section from "react-cismap/topicmaps/menu/Section";
 const Menu = () => {
   const { windowSize } = useContext(ResponsiveTopicMapContext);
-  console.log("windowSize", windowSize);
-
   let height;
 
   if (windowSize?.height) {
