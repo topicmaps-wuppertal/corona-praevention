@@ -86,6 +86,7 @@ function App() {
       appKey='CoronaPraeventionskarteWuppertal.TopicMap'
       featureItemsURL={"https://wupp-topicmaps-data.cismet.de/data/poi.data.json"}
       getFeatureStyler={getGTMFeatureStyler}
+      featureTooltipFunction={(feature) => feature?.text}
       convertItemToFeature={convertPOIItemsToFeature}
       clusteringOptions={{
         iconCreateFunction: getClusterIconCreatorFunction(30, (props) => props.color),
