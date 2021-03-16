@@ -13,7 +13,7 @@ const Menu = () => {
   }
   return (
     <DefaultAppMenu
-      menuTitle='Einstellungen und Kompaktanleitung'
+      menuTitle='Einstellungen, Statistik und Kompaktanleitung'
       titleCheckBoxlabel='Titel anzeigen'
       introductionMarkdown={`Über **Einstellungen** können Sie die Darstellung der Hintergrundkarte 
                 und der Objekte an Ihre Vorlieben anpassen. Unter **Statistik** finden 
@@ -32,23 +32,19 @@ const Menu = () => {
           <Section
             key='statistik'
             sectionKey='StatistikSection'
-            sectionTitle='Statistik'
+            sectionTitle='Statistik (aktuelle Fallzahlen)'
             sectionBsStyle='danger'
             sectionContent={
               <div>
-                <h4>Aktuelle Fallzahlen-Grafik für Wuppertal </h4>
                 <p>
-                  Die folgende Grafik wird stündlich an aktuelle Fallzahlen angepasst. Sie können
-                  mit dem Mauszeiger einen Tag auswählen und bekommen die entsprechende Zahl mit
-                  Datum angezeigt. Zwischen Grafik und den oberen Tabellen kann es leichte
-                  Unterschiede geben, denn die Tabellen werden nur einmal am Tag (montags bis
-                  freitags) aktualisiert.
+                  Das folgende Diagramm wird stündlich automatisch an die beim Gesundheitsamt zur
+                  COVID-19-Epidemie erfassten Fallzahlen angepasst. Bewegen Sie den Mauszeiger auf
+                  eine der farbigen Säulen in der Grafik, um sich die jeweilige Fallzahl und das
+                  zugehörige Referenzdatum anzeigen zu lassen. Durch Anklicken der farbigen Punkte
+                  in der Legende unterhalb des Diagramms können Sie einzelne Rubriken aus- und
+                  wieder einblenden.
                 </p>
-                <h4>Funktionen:</h4>
-                <p>
-                  Durch Anklicken der farbigen Punkte unten in der Legende können Sie einzelne
-                  Rubriken ausblenden.
-                </p>
+
                 <iframe
                   width='100%'
                   frameBorder='0'
