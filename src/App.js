@@ -109,8 +109,8 @@ function App() {
     >
       <TopicMapComponent
         modalMenu={<MyMenu />}
-        homeCenter={[51.2425605868143, 7.185153968951078]}
-        homeZoom={8}
+        homeCenter={[51.251236352367464, 7.162581102842314]}
+        homeZoom={7}
         locatorControl={true}
         gazData={gazData}
         applicationMenuTooltipString='Einstelllungen | Statistik | Anleitung'
