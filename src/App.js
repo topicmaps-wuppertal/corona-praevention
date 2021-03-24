@@ -64,7 +64,7 @@ const convertPOIItemsToFeature = async (itemIn) => {
     }
 
     const dateStringArr = (result + "2021").split(".");
-    console.log("dateStringArr xxx " + item.name, dateStringArr);
+
     const ab = new Date(
       parseInt(dateStringArr[2]),
       parseInt(dateStringArr[1] - 1),
