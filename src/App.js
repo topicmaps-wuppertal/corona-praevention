@@ -52,7 +52,41 @@ const convertPOIItemsToFeature = async (itemIn) => {
   const type = "Feature";
   const selected = false;
   const geometry = item?.geojson;
-  item.color = "#CB0D0D";
+
+  let aktiv = true;
+
+  if (item?.info && item.info.match(/^Kostenlose Bürgertestung .ab \d+.\d+/)) {
+    const regExp = /\(ab ([^)]+)\)/;
+    const matches = regExp.exec(item?.info);
+    let result = matches[1];
+    if (!result.endsWith(".")) {
+      result = result + ".";
+    }
+
+    const dateStringArr = (result + "2021").split(".");
+    console.log("dateStringArr xxx " + item.name, dateStringArr);
+    const ab = new Date(
+      parseInt(dateStringArr[2]),
+      parseInt(dateStringArr[1] - 1),
+      parseInt(dateStringArr[0])
+    );
+    const now = new Date();
+
+    if (ab < now) {
+      aktiv = true;
+    } else {
+      aktiv = false;
+    }
+  }
+
+  if (item?.name?.toLowerCase().includes("impf")) {
+    item.color = "#74000B";
+  } else if (aktiv === true) {
+    item.color = "#CB0D0D";
+  } else {
+    item.color = "#757774";
+  }
+
   const info = {
     header: item?.mainlocationtype?.lebenslagen?.join(","),
     title: text,
