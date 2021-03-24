@@ -22,11 +22,18 @@ const Menu = () => {
                 **Kompaktanleitung** für detailliertere Bedienungsinformationen.
       `}
       simpleHelp={{
-        content: `Mit Blick auf die aktuelle Verbreitung des Corona-Virus sind in Deutschland 
-                    bereits zahlreiche Schutzmaßnahmen erlassen worden. Ziel ist es, eine Ausbreitung 
-                    des Virus zu verlangsamen. Ein kostenloser Schnelltest pro Woche - dieses Angebot 
-                    richtet sich seit Mitte März an jede Bürgerin und jeden Bürger. Auch in Wuppertal 
-                    entstehen immer mehr Schnelltestzentren. `,
+        content: `Ein kostenloser Corona-Schnelltest pro Woche - dieses Angebot richtet sich seit 
+        Mitte März 2021 an jede Bürgerin und jeden Bürger. Auch in Wuppertal entstehen immer mehr 
+        Schnelltestzentren. Die Corona-Präventionskarte bietet einen Überblick über die Testzentren 
+        und sonstige relevante Einrichtungen wie das Corona-Impfzentrum. Die Informationen zu diesen 
+        "Corona-Präventionsorten" werden zunächst vom Presseamt der Stadt Wuppertal auf der städtischen 
+        Homepage publiziert und von dort zeitnah vom Team "Stadtkartographie" in den Datensatz der 
+        [interessanten Orte](https://offenedaten-wuppertal.de/dataset/interessante-orte-poi-wuppertal) 
+        (Points of Interest, kurz POI) im Wuppertaler Stadtgebiet übernommen. Diese Daten sind die 
+        Grundlage für die Darstellung in der Corona-Präventionskarte. Sie sind auch im Open-Data-Angebot 
+        der Stadt Wuppertal im täglich automatisch aktualisierten Datensatz 
+        [Corona-Präventionsorte Wuppertal](https://offenedaten-wuppertal.de/dataset/corona-pr%C3%A4ventionsorte-wuppertal) 
+        verfügbar.`,
       }}
       sections={{
         _10statistics: (
