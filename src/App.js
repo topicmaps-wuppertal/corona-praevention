@@ -41,22 +41,8 @@ const getGazData = async (setGazData) => {
 
   setGazData(gazData);
 };
-const getFullscreenEnabled = () => {
-  let iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
-
-  return (
-    iOS ||
-    document.fullscreenEnabled === true ||
-    document.webkitFullscreenEnabled === true ||
-    document.mozFullScreenEnabled === true ||
-    document.msFullscreenEnabled === true
-  );
-  // return true;
-};
 
 const convertPOIItemsToFeature = async (itemIn) => {
-  console.log("itemIn", itemIn);
-
   let item = await addSVGToProps(
     itemIn,
     (i) => i.signatur || i?.mainlocationtype?.signatur || "Platz.svg"
@@ -103,8 +89,8 @@ const convertPOIItemsToFeature = async (itemIn) => {
   const info = {
     header: item?.mainlocationtype?.lebenslagen?.join(","),
     title: text,
-    additionalInfo: item?.info,
-    subtitle: <span>{item?.adresse}</span>,
+    additionalInfo: item?.info || "",
+    subtitle: item?.adresse || "",
   };
   item.info = info;
 
@@ -159,7 +145,6 @@ function App() {
         homeCenter={[51.251236352367464, 7.162581102842314]}
         homeZoom={7}
         locatorControl={true}
-        fullScreenControl={getFullscreenEnabled()}
         gazData={gazData}
         applicationMenuTooltipString='Einstelllungen | Statistik | Anleitung'
         gazetteerSearchPlaceholder='Stadtteil | Adresse | POI'
