@@ -41,6 +41,19 @@ const getGazData = async (setGazData) => {
 
   setGazData(gazData);
 };
+const getFullscreenEnabled = () => {
+  let iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+
+  return (
+    iOS ||
+    document.fullscreenEnabled === true ||
+    document.webkitFullscreenEnabled === true ||
+    document.mozFullScreenEnabled === true ||
+    document.msFullscreenEnabled === true
+  );
+  // return true;
+};
+
 const convertPOIItemsToFeature = async (itemIn) => {
   console.log("itemIn", itemIn);
 
@@ -146,6 +159,7 @@ function App() {
         homeCenter={[51.251236352367464, 7.162581102842314]}
         homeZoom={7}
         locatorControl={true}
+        fullScreenControl={getFullscreenEnabled()}
         gazData={gazData}
         applicationMenuTooltipString='Einstelllungen | Statistik | Anleitung'
         gazetteerSearchPlaceholder='Stadtteil | Adresse | POI'
