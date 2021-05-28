@@ -18,6 +18,7 @@ import FeatureCollection from "react-cismap/FeatureCollection";
 import GenericInfoBoxFromFeature from "react-cismap/topicmaps/GenericInfoBoxFromFeature";
 import getGTMFeatureStyler from "react-cismap/topicmaps/generic/GTMStyler";
 import { addSVGToProps } from "react-cismap/tools/svgHelper";
+import { MappingConstants } from "react-cismap";
 
 const host = "https://wupp-topicmaps-data.cismet.de";
 
@@ -121,6 +122,7 @@ function App() {
       appKey='CoronaPraeventionskarteWuppertal.TopicMap'
       featureItemsURL={"https://wupp-topicmaps-data.cismet.de/data/poi.data.json"}
       getFeatureStyler={getGTMFeatureStyler}
+      referenceSystemDefinition={MappingConstants.proj4crs25832def}
       featureTooltipFunction={(feature) => feature?.text}
       convertItemToFeature={convertPOIItemsToFeature}
       clusteringOptions={{
