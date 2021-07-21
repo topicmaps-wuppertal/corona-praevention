@@ -25,7 +25,6 @@ const host = "https://wupp-topicmaps-data.cismet.de";
 const getGazData = async (setGazData) => {
   const prefix = "GazDataForStories";
   const sources = {};
-
   sources.adressen = await md5FetchText(prefix, host + "/data/adressen.json");
   sources.bezirke = await md5FetchText(prefix, host + "/data/bezirke.json");
   sources.quartiere = await md5FetchText(prefix, host + "/data/quartiere.json");
@@ -122,7 +121,6 @@ function App() {
       appKey='CoronaPraeventionskarteWuppertal.TopicMap'
       featureItemsURL={"https://wupp-topicmaps-data.cismet.de/data/poi.data.json"}
       getFeatureStyler={getGTMFeatureStyler}
-      referenceSystemDefinition={MappingConstants.proj4crs25832def}
       featureTooltipFunction={(feature) => feature?.text}
       convertItemToFeature={convertPOIItemsToFeature}
       clusteringOptions={{
@@ -145,7 +143,6 @@ function App() {
       <TopicMapComponent
         modalMenu={<MyMenu />}
         homeCenter={[51.251236352367464, 7.162581102842314]}
-        homeZoom={7}
         locatorControl={true}
         gazData={gazData}
         applicationMenuTooltipString='Einstelllungen | Statistik | Anleitung'
