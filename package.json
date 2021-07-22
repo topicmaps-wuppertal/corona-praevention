@@ -9,6 +9,7 @@
     "bootstrap": "^4.6.0",
     "react": "^16.11",
     "react-bootstrap": "^1.5.0",
+    "react-bootstrap-typeahead": "^5.1.4",
     "react-cismap": "^1.2.36",
     "react-dom": "^16.11",
     "react-scripts": "4.0.2",
