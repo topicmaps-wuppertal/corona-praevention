@@ -25,11 +25,11 @@ const host = "https://wupp-topicmaps-data.cismet.de";
 const getGazData = async (setGazData) => {
   const prefix = "GazDataForStories";
   const sources = {};
-  sources.adressen = await md5FetchText(prefix, host + "/data/adressen.json");
-  sources.bezirke = await md5FetchText(prefix, host + "/data/bezirke.json");
-  sources.quartiere = await md5FetchText(prefix, host + "/data/quartiere.json");
-  sources.pois = await md5FetchText(prefix, host + "/data/pois.json");
-  sources.kitas = await md5FetchText(prefix, host + "/data/kitas.json");
+  sources.adressen = await md5FetchText(prefix, host + "/data/3857/adressen.json");
+  sources.bezirke = await md5FetchText(prefix, host + "/data/3857/bezirke.json");
+  sources.quartiere = await md5FetchText(prefix, host + "/data/3857/quartiere.json");
+  sources.pois = await md5FetchText(prefix, host + "/data/3857/pois.json");
+  sources.kitas = await md5FetchText(prefix, host + "/data/3857/kitas.json");
 
   const gazData = getGazDataForTopicIds(sources, [
     "pois",
