@@ -14,7 +14,7 @@ const Menu = () => {
   return (
     <DefaultAppMenu
       menuTitle='Einstellungen, Statistik und Kompaktanleitung'
-      previewMapPosition='lat=51.24620211666691&lng=7.150774041211521&zoom=9'
+      previewMapPosition='lat=51.27002449822632&lng=7.203538091853262&zoom=14'
       titleCheckBoxlabel='Titel anzeigen'
       introductionMarkdown={`Über **Einstellungen** können Sie die Darstellung der Hintergrundkarte 
                 und der Objekte an Ihre Vorlieben anpassen. Unter **Statistik** finden 
