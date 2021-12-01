@@ -78,7 +78,10 @@ const convertPOIItemsToFeature = async (itemIn) => {
     }
   }
 
-  if (item?.name?.toLowerCase().includes("impfzentrum")) {
+  if (
+    item?.name?.toLowerCase().includes("impfzentrum") ||
+    item?.name?.toLowerCase().includes("mobiles impfangebot")
+  ) {
     item.color = "#74000B";
   } else if (aktiv === true) {
     item.color = "#CB0D0D";
