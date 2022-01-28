@@ -7,10 +7,12 @@ const Menu = () => {
   let height;
 
   if (windowSize?.height) {
-    height = windowSize?.height * 0.6;
+    height = windowSize?.height * 0.9;
   } else {
     height = 250;
   }
+  console.log("height", height);
+
   return (
     <DefaultAppMenu
       menuTitle='Einstellungen, Statistik und Kompaktanleitung'
@@ -54,9 +56,10 @@ const Menu = () => {
                 </p>
 
                 <iframe
+                  title='Corona Dashboard'
                   width='100%'
                   frameBorder='0'
-                  height={height}
+                  height={height > 750 ? height : 750}
                   src='https://stadt-wuppertal.maps.arcgis.com/apps/opsdashboard/index.html#/08a2f92cd26c4f459a7f0ee42f7653ce'
                 ></iframe>
               </div>
