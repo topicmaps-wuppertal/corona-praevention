@@ -6,14 +6,14 @@
     "runtime-main.js": "./static/js/runtime-main.88d112c9.js",
     "runtime-main.js.map": "./static/js/runtime-main.88d112c9.js.map",
     "static/css/2.8ad547cb.chunk.css": "./static/css/2.8ad547cb.chunk.css",
-    "static/js/2.232e1566.chunk.js": "./static/js/2.232e1566.chunk.js",
-    "static/js/2.232e1566.chunk.js.map": "./static/js/2.232e1566.chunk.js.map",
+    "static/js/2.6df8df37.chunk.js": "./static/js/2.6df8df37.chunk.js",
+    "static/js/2.6df8df37.chunk.js.map": "./static/js/2.6df8df37.chunk.js.map",
     "static/js/3.ad21d311.chunk.js": "./static/js/3.ad21d311.chunk.js",
     "static/js/3.ad21d311.chunk.js.map": "./static/js/3.ad21d311.chunk.js.map",
     "index.html": "./index.html",
     "static/css/2.8ad547cb.chunk.css.map": "./static/css/2.8ad547cb.chunk.css.map",
     "static/css/main.8c8b27cf.chunk.css.map": "./static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.232e1566.chunk.js.LICENSE.txt": "./static/js/2.232e1566.chunk.js.LICENSE.txt",
+    "static/js/2.6df8df37.chunk.js.LICENSE.txt": "./static/js/2.6df8df37.chunk.js.LICENSE.txt",
     "static/media/MeinStandpunktMarker.aec65d22.jpg": "./static/media/MeinStandpunktMarker.aec65d22.jpg",
     "static/media/MeinStandpunktMarkerDoppel.e4a85271.jpg": "./static/media/MeinStandpunktMarkerDoppel.e4a85271.jpg",
     "static/media/font-awesome.css": "./static/media/fontawesome-webfont.f691f37e.woff",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.88d112c9.js",
     "static/css/2.8ad547cb.chunk.css",
-    "static/js/2.232e1566.chunk.js",
+    "static/js/2.6df8df37.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
     "static/js/main.2ae0b3b6.chunk.js"
   ]
