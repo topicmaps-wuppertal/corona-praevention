@@ -162,7 +162,16 @@ function App() {
                 },
               },
               noCurrentFeatureTitle: "Keine Zentren gefunden",
-              noCurrentFeatureContent: "",
+              noCurrentFeatureContent: (
+                <span>
+                  Die Stadt Wuppertal veröffentlicht aktuell keine Corona-Präventionsorte. Bitte
+                  informieren Sie sich{" "}
+                  <a href='https://www.wuppertal.de/microsite/geoportal/topicmaps/topicmaps.php'>
+                    hier
+                  </a>{" "}
+                  über unser TopicMap-Angebot.
+                </span>
+              ),
             }}
           />
         }
