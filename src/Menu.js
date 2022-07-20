@@ -2,6 +2,8 @@ import { useContext } from "react";
 import { ResponsiveTopicMapContext } from "react-cismap/contexts/ResponsiveTopicMapContextProvider";
 import DefaultAppMenu from "react-cismap/topicmaps/menu/DefaultAppMenu";
 import Section from "react-cismap/topicmaps/menu/Section";
+import CismetFooterAcks from "react-cismap/topicmaps/wuppertal/CismetFooterAcknowledgements";
+
 const Menu = () => {
   const { windowSize } = useContext(ResponsiveTopicMapContext);
   let height;
@@ -67,6 +69,13 @@ const Menu = () => {
           />
         ),
       }}
+      menuFooter={
+        <div style={{ fontSize: "11px" }}>
+          <b>Hintergrundkarten</b>: Stadtkarte 2.0 © RVR | True Orthophoto 2022 © Stadt Wuppertal{" "}
+          <br />
+          <CismetFooterAcks />
+        </div>
+      }
     ></DefaultAppMenu>
   );
 };
